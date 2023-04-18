@@ -49,5 +49,4 @@ object NetworkModule {
     fun provideApiService(retrofit: Retrofit): FoodRecipesApi {
         return retrofit.create(FoodRecipesApi::class.java)
     }
-
 }
