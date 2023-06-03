@@ -9,7 +9,7 @@
     tools:context=".ui.fragments.overview.OverviewFragment">
 
     <ImageView
-        android:id="@+id/mainImageView"
+        android:id="@+id/main_imageView"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
@@ -19,18 +19,18 @@
         tools:src="@tools:sample/avatars" />
 
     <View
-        android:id="@+id/gradientOverlay"
+        android:id="@+id/gradient_overlay"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:background="@drawable/gradient_overlay"
-        app:layout_constraintTop_toTopOf="@+id/mainImageView"
-        app:layout_constraintBottom_toBottomOf="@+id/mainImageView"
-        app:layout_constraintStart_toStartOf="@+id/mainImageView"
-        app:layout_constraintEnd_toEndOf="@+id/mainImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/main_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/main_imageView"
+        app:layout_constraintStart_toStartOf="@+id/main_imageView"
+        app:layout_constraintTop_toTopOf="@+id/main_imageView"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/timeTextView"
+        android:id="@+id/time_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -39,21 +39,21 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/mainImageView"
-        app:layout_constraintEnd_toEndOf="@id/gradientOverlay"/>
+        app:layout_constraintBottom_toBottomOf="@+id/main_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/gradient_overlay" />
 
     <ImageView
-        android:id="@+id/timeImageView"
+        android:id="@+id/time_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_clock"
-        app:layout_constraintBottom_toTopOf="@id/timeTextView"
-        app:layout_constraintEnd_toEndOf="@id/timeTextView"
-        app:layout_constraintStart_toStartOf="@id/timeTextView"
+        app:layout_constraintBottom_toTopOf="@+id/time_textView"
+        app:layout_constraintEnd_toEndOf="@+id/time_textView"
+        app:layout_constraintStart_toStartOf="@+id/time_textView"
         app:tint="@color/white" />
 
     <TextView
-        android:id="@+id/likesTextView"
+        android:id="@+id/likes_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -61,21 +61,21 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/timeTextView"
-        app:layout_constraintEnd_toStartOf="@+id/timeTextView" />
+        app:layout_constraintBottom_toBottomOf="@+id/time_textView"
+        app:layout_constraintEnd_toStartOf="@+id/time_textView" />
 
     <ImageView
-        android:id="@+id/likesImageView"
+        android:id="@+id/likes_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_heart"
-        app:layout_constraintBottom_toTopOf="@id/likesTextView"
-        app:layout_constraintEnd_toEndOf="@id/likesTextView"
-        app:layout_constraintStart_toStartOf="@id/likesTextView"
+        app:layout_constraintBottom_toTopOf="@+id/likes_textView"
+        app:layout_constraintEnd_toEndOf="@+id/likes_textView"
+        app:layout_constraintStart_toStartOf="@+id/likes_textView"
         app:tint="@color/white" />
 
     <TextView
-        android:id="@+id/titleTextView"
+        android:id="@+id/title_textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -88,135 +88,135 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/main_imageView" />
 
     <ImageView
-        android:id="@+id/vegetarianImageView"
+        android:id="@+id/vegetarian_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:src="@drawable/ic_checkmark"
-        app:layout_constraintStart_toStartOf="@+id/titleTextView"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintStart_toStartOf="@+id/title_textView"
+        app:layout_constraintTop_toBottomOf="@+id/title_textView"
         app:tint="@color/itemColor" />
 
     <TextView
-        android:id="@+id/vegetarianTextView"
+        android:id="@+id/vegetarian_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/vegetarian"
         android:textColor="@color/itemColor"
-        app:layout_constraintBottom_toBottomOf="@+id/vegetarianImageView"
-        app:layout_constraintStart_toEndOf="@+id/vegetarianImageView"
-        app:layout_constraintTop_toTopOf="@+id/vegetarianImageView" />
+        app:layout_constraintBottom_toBottomOf="@+id/vegetarian_imageView"
+        app:layout_constraintStart_toEndOf="@+id/vegetarian_imageView"
+        app:layout_constraintTop_toTopOf="@+id/vegetarian_imageView" />
 
     <ImageView
-        android:id="@+id/veganImageView"
+        android:id="@+id/vegan_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:src="@drawable/ic_checkmark"
-        app:layout_constraintStart_toStartOf="@+id/vegetarianImageView"
-        app:layout_constraintTop_toBottomOf="@+id/vegetarianImageView"
+        app:layout_constraintStart_toStartOf="@+id/vegetarian_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/vegetarian_imageView"
         app:tint="@color/itemColor" />
 
     <TextView
-        android:id="@+id/veganTextView"
+        android:id="@+id/vegan_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/vegan"
         android:textColor="@color/itemColor"
-        app:layout_constraintBottom_toBottomOf="@+id/veganImageView"
-        app:layout_constraintStart_toEndOf="@+id/veganImageView"
-        app:layout_constraintTop_toTopOf="@+id/veganImageView" />
+        app:layout_constraintBottom_toBottomOf="@+id/vegan_imageView"
+        app:layout_constraintStart_toEndOf="@+id/vegan_imageView"
+        app:layout_constraintTop_toTopOf="@+id/vegan_imageView" />
 
     <ImageView
-        android:id="@+id/glutenFreeImageView"
+        android:id="@+id/gluten_free_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:src="@drawable/ic_checkmark"
-        app:layout_constraintBottom_toBottomOf="@+id/vegetarianTextView"
-        app:layout_constraintStart_toEndOf="@+id/vegetarianTextView"
-        app:layout_constraintTop_toTopOf="@+id/vegetarianTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/vegetarian_textView"
+        app:layout_constraintStart_toEndOf="@+id/vegetarian_textView"
+        app:layout_constraintTop_toTopOf="@+id/vegetarian_textView"
         app:tint="@color/itemColor" />
 
     <TextView
-        android:id="@+id/glutenFreeTextView"
+        android:id="@+id/gluten_free_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/gluten_free"
         android:textColor="@color/itemColor"
-        app:layout_constraintBottom_toBottomOf="@+id/glutenFreeImageView"
-        app:layout_constraintStart_toEndOf="@+id/glutenFreeImageView"
-        app:layout_constraintTop_toTopOf="@+id/glutenFreeImageView" />
+        app:layout_constraintBottom_toBottomOf="@+id/gluten_free_imageView"
+        app:layout_constraintStart_toEndOf="@+id/gluten_free_imageView"
+        app:layout_constraintTop_toTopOf="@+id/gluten_free_imageView" />
 
     <ImageView
-        android:id="@+id/dairyFreeImageView"
+        android:id="@+id/dairy_free_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:src="@drawable/ic_checkmark"
-        app:layout_constraintStart_toStartOf="@+id/glutenFreeImageView"
-        app:layout_constraintTop_toBottomOf="@+id/glutenFreeImageView"
+        app:layout_constraintStart_toStartOf="@+id/gluten_free_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/gluten_free_imageView"
         app:tint="@color/itemColor" />
 
     <TextView
-        android:id="@+id/dairyFreeTextView"
+        android:id="@+id/dairy_free_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/dairy_free"
         android:textColor="@color/itemColor"
-        app:layout_constraintBottom_toBottomOf="@+id/dairyFreeImageView"
-        app:layout_constraintStart_toEndOf="@+id/dairyFreeImageView"
-        app:layout_constraintTop_toTopOf="@+id/dairyFreeImageView" />
+        app:layout_constraintBottom_toBottomOf="@+id/dairy_free_imageView"
+        app:layout_constraintStart_toEndOf="@+id/dairy_free_imageView"
+        app:layout_constraintTop_toTopOf="@+id/dairy_free_imageView" />
 
     <ImageView
-        android:id="@+id/healthyImageView"
+        android:id="@+id/healthy_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:src="@drawable/ic_checkmark"
-        app:layout_constraintBottom_toBottomOf="@+id/glutenFreeTextView"
-        app:layout_constraintStart_toEndOf="@+id/glutenFreeTextView"
-        app:layout_constraintTop_toTopOf="@+id/glutenFreeTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/gluten_free_textView"
+        app:layout_constraintStart_toEndOf="@+id/gluten_free_textView"
+        app:layout_constraintTop_toTopOf="@+id/gluten_free_textView"
         app:tint="@color/itemColor" />
 
     <TextView
-        android:id="@+id/healthyTextView"
+        android:id="@+id/healthy_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/healthy"
         android:textColor="@color/itemColor"
-        app:layout_constraintBottom_toBottomOf="@+id/healthyImageView"
-        app:layout_constraintStart_toEndOf="@+id/healthyImageView"
-        app:layout_constraintTop_toTopOf="@+id/healthyImageView" />
+        app:layout_constraintBottom_toBottomOf="@+id/healthy_imageView"
+        app:layout_constraintStart_toEndOf="@+id/healthy_imageView"
+        app:layout_constraintTop_toTopOf="@+id/healthy_imageView" />
 
     <ImageView
-        android:id="@+id/cheapImageView"
+        android:id="@+id/cheap_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:src="@drawable/ic_checkmark"
-        app:layout_constraintStart_toStartOf="@+id/healthyImageView"
-        app:layout_constraintTop_toBottomOf="@+id/healthyImageView"
+        app:layout_constraintStart_toStartOf="@+id/healthy_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/healthy_imageView"
         app:tint="@color/itemColor" />
 
     <TextView
-        android:id="@+id/cheapTextView"
+        android:id="@+id/cheap_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/cheap"
         android:textColor="@color/itemColor"
-        app:layout_constraintBottom_toBottomOf="@+id/cheapImageView"
-        app:layout_constraintStart_toEndOf="@+id/cheapImageView"
-        app:layout_constraintTop_toTopOf="@+id/cheapImageView" />
+        app:layout_constraintBottom_toBottomOf="@+id/cheap_imageView"
+        app:layout_constraintStart_toEndOf="@+id/cheap_imageView"
+        app:layout_constraintTop_toTopOf="@+id/cheap_imageView" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -228,7 +228,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/veganImageView">
+        app:layout_constraintTop_toBottomOf="@+id/vegan_imageView">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -236,7 +236,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/summaryTextView"
+                android:id="@+id/summary_textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
