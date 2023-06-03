@@ -12,7 +12,9 @@ import com.example.foody.ui.fragments.instructions.InstructionsFragment
 import com.example.foody.ui.fragments.overview.OverviewFragment
 import com.example.foody.util.Constants.Companion.RECIPE_RESULT_KEY
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DetailsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailsBinding

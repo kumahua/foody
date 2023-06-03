@@ -37,8 +37,13 @@ class MainViewModel @Inject constructor(
         getRecipesSafeCall(quires)
     }
 
+    fun searchRecipes(queries: HashMap<String, String>) = viewModelScope.launch {
+        getRecipesSafeCall(queries)
+    }
+
     private suspend fun getRecipesSafeCall(quires: Map<String, String>) {
         _recipesResponse.value = NetworkResult.Loading()
+
         if (hasInterConnection()) {
             try {
                 val response = repository.remote.getRecipes(quires)

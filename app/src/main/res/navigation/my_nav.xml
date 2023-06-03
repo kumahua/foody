@@ -53,7 +53,7 @@
     <activity
         android:id="@+id/detailsActivity"
         android:name="com.example.foody.ui.DetailsActivity"
-        android:label="activity_details"
+        android:label="Details"
         tools:layout="@layout/activity_details" >
         <argument
             android:name="result"
