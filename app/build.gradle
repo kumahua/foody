@@ -93,4 +93,8 @@ dependencies {
 
     // Jsoup
     implementation 'org.jsoup:jsoup:1.14.3'
+
+    //logger
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+    implementation 'com.orhanobut:logger:2.2.0'
 }
